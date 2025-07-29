@@ -1,4 +1,4 @@
-const apiKey = 'b77e812756497ce9b5c27096f65ced87'; // Replace with your OpenWeatherMap API key
+const apiKey = 'You api'; // Replace with your OpenWeatherMap API key
 let chartInstance;
 
 function toggleTheme() {
