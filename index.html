@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">🌞 / 🌙</button>
+  </div>
+
+  <div class="app-container">
+    <h1>🌤️ Weather Dashboard</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="getWeather()">Search</button>
+      <button onclick="getLocationWeather()">📍</button>
+    </div>
+
+    <div class="weather-card" id="weatherCard">
+      <h2 id="cityName">Chennai</h2>
+      <img id="weatherIcon" src="wheather.jpg" alt="Weather Icon" />
+      <p id="temperature">32 °C</p>
+      <p id="description">Partly cloudy with a high of 36°C and a low of 28°C.</p>
+      <p id="humidity">Humidity: 68%</p>
+      <p id="wind">Wind: 50 km/h</p>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="tempChart"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
